@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: rahulwagh17/jhooq-docker-demo:jhooq-docker-demo
+          image: vogetisameer12/jhooq-docker-demo:jhooq-docker-demo
           ports:
             - containerPort: 8080
           env:
@@ -26,7 +26,7 @@ kind: Service
 metadata:
   name: jhooq-springboot
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 8080
