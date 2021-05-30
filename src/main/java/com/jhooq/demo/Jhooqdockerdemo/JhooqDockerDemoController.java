@@ -11,7 +11,7 @@ public class JhooqDockerDemoController {
     public String hello() {
         String ip="";
          try {
-            String ip = InetAddress.getLocalHost().getHostAddress();
+            ip = InetAddress.getLocalHost().getHostAddress();
             System.out.printf("%s", ip);
         } catch (Exception e) {
             e.printStackTrace();
