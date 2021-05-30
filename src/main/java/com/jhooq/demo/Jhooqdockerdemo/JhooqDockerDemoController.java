@@ -16,6 +16,6 @@ public class JhooqDockerDemoController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "Docker Demo - Hello Jhooq from: "+ip;
+        return "K8s Demo - Hello from: "+ip;
     }
 }
